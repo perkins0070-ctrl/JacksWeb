@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jack Perkins - Personal Portfolio</title>
+    <meta name="description" content="Jack Perkins' personal portfolio showcasing projects, interests, and professional journey">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Dark Mode Toggle -->
+    <button id="darkModeToggle" class="dark-mode-toggle" aria-label="Toggle dark mode">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home" class="logo-link">
+                    <span class="logo-text">JP</span>
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#links" class="nav-link">Links</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#gallery" class="nav-link">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#career" class="nav-link">Career</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#facts" class="nav-link">Fun Facts</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="section home-section active">
+        <div class="container">
+            <div class="home-content">
+                <div class="hero-container">
+                    <h1 class="hero-title">
+                        Hey there, I'm <span class="name-highlight">Jack Perkins</span>
+                    </h1>
+                    <p class="hero-subtitle typed-text" id="typedText"></p>
+                    
+                    <div class="hero-actions">
+                        <a href="#links" class="cta-button primary">
+                            <i class="fas fa-rocket"></i>
+                            Let's Connect
+                        </a>
+                        <a href="#gallery" class="cta-button secondary">
+                            <i class="fas fa-images"></i>
+                            View Gallery
+                        </a>
+                        <a href="#career" class="cta-button secondary">
+                            <i class="fas fa-briefcase"></i>
+                            Career
+                        </a>
+                        <a href="#facts" class="cta-button secondary">
+                            <i class="fas fa-lightbulb"></i>
+                            Fun Facts
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hero-visual">
+                    <div class="floating-elements">
+                        <div class="float-item float-1">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="float-item float-2">
+                            <i class="fas fa-coffee"></i>
+                        </div>
+                        <div class="float-item float-3">
+                            <i class="fas fa-cat"></i>
+                        </div>
+                        <div class="float-item float-4">
+                            <i class="fas fa-tree"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Links Hub Section -->
+    <section id="links" class="section links-section">
+        <div class="container">
+            <h2 class="section-title">Connect With Me</h2>
+            <div class="links-grid">
+                <a href="https://github.com/yourusername" target="_blank" class="link-card github">
+                    <div class="link-icon">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <div class="link-content">
+                        <h3>GitHub</h3>
+                        <p>Code repositories & projects</p>
+                    </div>
+                </a>
+                
+                <a href="https://linkedin.com/in/yourusername" target="_blank" class="link-card linkedin">
+                    <div class="link-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </div>
+                    <div class="link-content">
+                        <h3>LinkedIn</h3>
+                        <p>Professional network</p>
+                    </div>
+                </a>
+                
+
+                
+                <a href="mailto:your.email@example.com" class="link-card email">
+                    <div class="link-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="link-content">
+                        <h3>Email</h3>
+                        <p>Get in touch</p>
+                    </div>
+                </a>
+                
+                <a href="https://medium.com/@yourusername" target="_blank" class="link-card medium">
+                    <div class="link-icon">
+                        <i class="fab fa-medium"></i>
+                    </div>
+                    <div class="link-content">
+                        <h3>Medium</h3>
+                        <p>Writing & articles</p>
+                    </div>
+                </a>
+                
+                <a href="https://instagram.com/yourusername" target="_blank" class="link-card instagram">
+                    <div class="link-icon">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <div class="link-content">
+                        <h3>Instagram</h3>
+                        <p>Life in photos</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section gallery-section">
+        <div class="container">
+            <h2 class="section-title">Gallery</h2>
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="nature">Nature</button>
+                <button class="filter-btn" data-filter="people">People</button>
+                <button class="filter-btn" data-filter="cats">Cats</button>
+            </div>
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Gallery items will be dynamically loaded -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Career Section -->
+    <section id="career" class="section career-section">
+        <div class="container">
+            <h2 class="section-title">Career Journey</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Senior Solutions Architect</h3>
+                            <span class="timeline-date">2023 - Present</span>
+                        </div>
+                        <h4>Tech Company Inc.</h4>
+                        <p>Designing scalable system architectures and leading digital transformation initiatives. Collaborating with stakeholders to translate business requirements into technical solutions.</p>
+                        <div class="skills-tags">
+                            <span class="skill-tag">AWS</span>
+                            <span class="skill-tag">Azure</span>
+                            <span class="skill-tag">System Design</span>
+                            <span class="skill-tag">Microservices</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Solutions Architect</h3>
+                            <span class="timeline-date">2021 - 2023</span>
+                        </div>
+                        <h4>StartupXYZ</h4>
+                        <p>Architected cloud-native solutions and designed integration patterns for enterprise clients. Led technical discovery sessions and created solution blueprints.</p>
+                        <div class="skills-tags">
+                            <span class="skill-tag">Cloud Architecture</span>
+                            <span class="skill-tag">API Design</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">Kubernetes</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Technical Consultant</h3>
+                            <span class="timeline-date">2020 - 2021</span>
+                        </div>
+                        <h4>WebDev Agency</h4>
+                        <p>Started my professional journey analyzing client requirements and designing technical solutions. Focused on system integration and solution optimization.</p>
+                        <div class="skills-tags">
+                            <span class="skill-tag">Requirements Analysis</span>
+                            <span class="skill-tag">System Integration</span>
+                            <span class="skill-tag">Technical Documentation</span>
+                            <span class="skill-tag">Client Consulting</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Computer Science Degree</h3>
+                            <span class="timeline-date">2016 - 2020</span>
+                        </div>
+                        <h4>University Name</h4>
+                        <p>Bachelor's degree in Computer Science with focus on systems architecture and enterprise solutions. Graduated Cum Laude with specialization in distributed systems.</p>
+                        <div class="skills-tags">
+                            <span class="skill-tag">Systems Architecture</span>
+                            <span class="skill-tag">Distributed Systems</span>
+                            <span class="skill-tag">Database Design</span>
+                            <span class="skill-tag">Enterprise Solutions</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fun Facts Section -->
+    <section id="facts" class="section facts-section">
+        <div class="container">
+            <h2 class="section-title">Fun Facts Generator</h2>
+            <div class="facts-container">
+                <div class="fact-categories">
+                    <button class="fact-btn" data-category="nature">
+                        <i class="fas fa-tree"></i>
+                        Nature Facts
+                    </button>
+                    <button class="fact-btn" data-category="history">
+                        <i class="fas fa-landmark"></i>
+                        History Facts
+                    </button>
+                    <button class="fact-btn" data-category="cats">
+                        <i class="fas fa-cat"></i>
+                        Cat Facts
+                    </button>
+                    <button class="fact-btn" data-category="tech">
+                        <i class="fas fa-microchip"></i>
+                        Tech Facts
+                    </button>
+                </div>
+                
+                <div class="fact-display">
+                    <div class="fact-content" id="factContent">
+                        <p>Click a category above to generate an interesting fact!</p>
+                    </div>
+                    <button class="generate-btn" id="generateBtn">
+                        <i class="fas fa-refresh"></i>
+                        Generate New Fact
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>Made with <i class="fas fa-coffee"></i> and <i class="fas fa-laptop-code"></i> by Jack Perkins</p>
+                <p class="footer-year">&copy; 2024 - My corner of the internet</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="scripts/facts.js"></script>
+    <script src="scripts/gallery.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

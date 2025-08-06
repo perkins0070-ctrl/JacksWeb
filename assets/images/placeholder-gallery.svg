@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="backgroundGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FDF6E3;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F5E6D3;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="leafGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#228B22;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#32CD32;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="mountainGradient" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#D2691E;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF8C42;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="400" fill="url(#backgroundGradient)"/>
+  
+  <!-- Mountains/Hills -->
+  <path d="M0 300 Q100 250, 200 280 Q300 250, 400 290 L400 400 L0 400 Z" 
+        fill="url(#mountainGradient)" opacity="0.7"/>
+  
+  <!-- Secondary Hills -->
+  <path d="M0 320 Q150 280, 250 300 Q350 280, 400 310 L400 400 L0 400 Z" 
+        fill="#8B4513" opacity="0.5"/>
+  
+  <!-- Sun/Moon -->
+  <circle cx="320" cy="100" r="30" fill="#FFD700" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;1;0.8" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Tree Trunk -->
+  <rect x="180" y="250" width="15" height="60" fill="#8B4513" rx="3"/>
+  
+  <!-- Tree Leaves -->
+  <circle cx="187" cy="240" r="25" fill="url(#leafGradient)" opacity="0.9"/>
+  <circle cx="175" cy="225" r="20" fill="#228B22" opacity="0.8"/>
+  <circle cx="200" cy="225" r="18" fill="#32CD32" opacity="0.7"/>
+  
+  <!-- Falling Leaves -->
+  <g opacity="0.6">
+    <path d="M100 150 Q105 145, 110 150 Q115 155, 110 160 Q105 155, 100 150 Z" 
+          fill="#D2691E" transform="rotate(45 105 155)">
+      <animateTransform attributeName="transform" type="translate" 
+                        values="0,0; 50,100; 0,200" dur="4s" repeatCount="indefinite"/>
+    </path>
+    
+    <path d="M250 100 Q255 95, 260 100 Q265 105, 260 110 Q255 105, 250 100 Z" 
+          fill="#CD853F" transform="rotate(-30 255 105)">
+      <animateTransform attributeName="transform" type="translate" 
+                        values="0,0; -30,150; 20,300" dur="5s" repeatCount="indefinite"/>
+    </path>
+    
+    <path d="M350 120 Q355 115, 360 120 Q365 125, 360 130 Q355 125, 350 120 Z" 
+          fill="#B22222" transform="rotate(60 355 125)">
+      <animateTransform attributeName="transform" type="translate" 
+                        values="0,0; -80,200; -20,400" dur="6s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  
+  <!-- Camera Icon Overlay -->
+  <g transform="translate(160, 160)" opacity="0.3">
+    <rect x="0" y="10" width="80" height="60" rx="8" fill="#4A5568"/>
+    <rect x="5" y="5" width="70" height="10" rx="5" fill="#4A5568"/>
+    <circle cx="40" cy="40" r="18" fill="none" stroke="white" stroke-width="3"/>
+    <circle cx="40" cy="40" r="12" fill="none" stroke="white" stroke-width="2"/>
+    <rect x="60" y="20" width="8" height="6" rx="2" fill="white"/>
+  </g>
+  
+  <!-- Decorative Border -->
+  <rect x="5" y="5" width="390" height="390" fill="none" 
+        stroke="#D2691E" stroke-width="2" stroke-dasharray="10,5" opacity="0.4" rx="10"/>
+  
+  <!-- Text Overlay -->
+  <text x="200" y="350" text-anchor="middle" font-family="serif" 
+        font-size="18" font-weight="bold" fill="#8B4513" opacity="0.7">
+    Gallery Image
+  </text>
+  
+  <!-- Subtle Pattern -->
+  <defs>
+    <pattern id="subtlePattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="10" cy="10" r="1" fill="#D2691E" opacity="0.1"/>
+    </pattern>
+  </defs>
+  <rect width="400" height="400" fill="url(#subtlePattern)"/>
+</svg>
