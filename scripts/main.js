@@ -10,9 +10,7 @@ class PersonalPortfolio {
         this.typingIndex = 0;
         this.typingTexts = [
             'Solutions Architect',
-            'Professional Cat Herder',
-            'System Design Wizard', 
-            'Architecture Enthusiast',
+            'Professional Cat Dad',
             'Cloud Whisperer',
             'Integration Specialist',
             'Coffee-to-Solutions Converter',
